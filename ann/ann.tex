@@ -63,11 +63,11 @@
 %% Opacidad de los logotipos
 \newcommand{\opacidad}{1}
 %% Descomentar para habilitar logotipo en pié de página de portada
-\renewcommand{\logoUno}{Images/isg.png}
+%%\renewcommand{\logoUno}{Images/isg.png}
 %% Descomentar para habilitar logotipo en pié de página de portada
 %\renewcommand{\logoDos}{Images/CCLogo.png}
 %% Descomentar para habilitar logotipo en pié de página de portada
-%\renewcommand{\logoTres}{Images/ALogo.png}
+\renewcommand{\logoTres}{Images/ALogo.png}
 %% Descomentar para habilitar logotipo en pié de página de portada
 %\renewcommand{\logoCuatro}{Images/ELogo.png}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -279,12 +279,12 @@
 
 	\bigskip
     \begin{columns}
- 	   \column{.70\textwidth}
+ 	   \column{.60\textwidth}
 		\begin{description}
 		\item[$a_i$] Input
-		\item[$w_{i}$] Weight of input $j$
-		\item[$\theta$] Threshold
+		\item[$w_{i}$] Weight of input $i$
 		\item[$g$] Activation function
+		\item[$\theta$] Threshold
 		\end{description}
 
  	   \column{.30\textwidth}
@@ -294,6 +294,8 @@
 	   y=g\left( \sum_{i} w_{i} a_i \right)
 	   \end{equation*}
 	   \end{block}
+
+ 	   \column{.10\textwidth}
     \end{columns}
 \end{frame}
 
@@ -380,8 +382,6 @@
 			 $1$ & $0$ \\
 			 \end{tabular}
     \end{columns}
-	\bigskip
-	\centering \href{https://github.com/dfbarrero/dataCourse/raw/master/ann/artificialNeuron.xlsx}{(A neuron in Excel)}
 \end{frame}
 
 \begin{frame}{Artificial neurons}{Definition of neuron (alternative version)}
@@ -389,10 +389,10 @@
 
 	\bigskip
     \begin{columns}
- 	   \column{.70\textwidth}
+ 	   \column{.60\textwidth}
 		\begin{description}
 		\item[$a_i$] Input
-		\item[$w_{i}$] Weight of input $j$
+		\item[$w_{i}$] Weight of input $i$
 		\item[$w_0$] Bias
 		\item[$g$] Activation function
 		\end{description}
@@ -404,6 +404,8 @@
 	   y=g\left( \sum_{i} w_{i} a_i \right)
 	   \end{equation*}
 	   \end{block}
+
+ 	   \column{.10\textwidth}
     \end{columns}
 \end{frame}
 
@@ -460,6 +462,9 @@
 		g'(x) = g(x) (1-g(x))
 		\end{equation*}
 		\end{block}
+
+	    \smallskip
+	    \centering \href{https://github.com/dfbarrero/dataCourse/raw/master/ann/artificialNeuron.xlsx}{(A neuron in Excel)}
     	\end{columns}
 \end{frame}
 
